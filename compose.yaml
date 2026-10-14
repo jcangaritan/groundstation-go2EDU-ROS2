@@ -1,0 +1,96 @@
+# Uso (desde la raíz del repo, tras ejecutar ./setup.sh una vez):
+#
+#   Go2 EDU (Jetson Orin NX):  docker compose --profile robot up -d --build
+#                              docker compose exec onboard bash
+#   Portátil (ASUS TUF):       xhost +local:root
+#                              docker compose --profile gui up -d --build
+#                              docker compose exec desktop bash
+#
+# Equivalente a tu antiguo "docker run -it --rm":
+#   docker compose --profile robot run --rm onboard
+#
+# Requiere Docker Compose v2 reciente (el atributo `gpus:` necesita >= 2.30).
+# Si tu versión es anterior, usa deploy.resources.reservations.devices.
+
+x-env: &env
+  RMW_IMPLEMENTATION: rmw_cyclonedds_cpp
+  RCUTILS_COLORIZED_OUTPUT: "1"
+  QT_X11_NO_MITSHM: "1"
+  DISPLAY: ${DISPLAY:-:0}
+  NVIDIA_VISIBLE_DEVICES: all
+  NVIDIA_DRIVER_CAPABILITIES: all
+
+# Mismos volúmenes que tu run_docker.sh: src bind-montado, build/install aparte
+# para conservar la propiedad de tu usuario y no recompilar al recrear el contenedor.
+x-volumes: &ws-volumes
+  - /tmp/.X11-unix:/tmp/.X11-unix:rw
+  # drivers_ws
+  - ${HOME}/workspaces/drivers_ws/src/livox_ros_driver2:/root/drivers_ws/src/livox_ros_driver2
+  - ${HOME}/workspaces/drivers_ws/src/ublox_ros2_ardusimple:/root/drivers_ws/src/ublox_ros2_ardusimple
+  - ${HOME}/workspaces/drivers_ws/src/unitree_ros2:/root/drivers_ws/src/unitree_ros2
+  - ${HOME}/workspaces/drivers_ws/build_drivers:/root/drivers_ws/build
+  - ${HOME}/workspaces/drivers_ws/install_drivers:/root/drivers_ws/install
+  # fast_lio_ws
+  - ${HOME}/workspaces/fast_lio_ws/src/FAST_LIO_ROS2:/root/fast_lio_ws/src/FAST_LIO_ROS2
+  - ${HOME}/workspaces/fast_lio_ws/build_fastlio:/root/fast_lio_ws/build
+  - ${HOME}/workspaces/fast_lio_ws/install_fastlio:/root/fast_lio_ws/install
+  # unitree_ws
+  - ${HOME}/workspaces/unitree_ws/src/unitree_ros2:/root/unitree_ws/src/unitree_ros2
+  - ${HOME}/workspaces/unitree_ws/build_unitree:/root/unitree_ws/build
+  - ${HOME}/workspaces/unitree_ws/install_unitree:/root/unitree_ws/install
+  # geospatial_ws (este repo)
+  - .:/root/geospatial_ws/src/geospatial-nav
+  - ./build_docker:/root/geospatial_ws/build
+  - ./install_docker:/root/geospatial_ws/install
+  - ${HOME}/docker_data:/root/geospatial_ws/data
+  - ${HOME}/geonav_config:/root/env_config
+
+x-common: &common
+  network_mode: host
+  ipc: host            # con ipc: host se usa el /dev/shm del host; shm_size no aplica
+  stdin_open: true
+  tty: true
+  working_dir: /root/geospatial_ws
+  volumes: *ws-volumes
+
+services:
+  # ==========================================================
+  # Go2 EDU: Jetson Orin NX (ARM64, onboard)
+  # ==========================================================
+  onboard:
+    <<: *common
+    profiles: ["robot"]
+    image: geospatial-nav:humble-jetson
+    container_name: geospatial_onboard
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.robot
+    privileged: true   # USB/serie (ublox), Livox, CAN
+    runtime: nvidia
+    environment:
+      <<: *env
+    # Deja memoria y núcleos al JetPack/servicios del Go2 (16 GB, 8 cores)
+    mem_limit: 11g
+    cpus: 6
+
+  # ==========================================================
+  # Ground station: ASUS TUF A15 (x86_64, RTX 4060)
+  # ==========================================================
+  desktop:
+    <<: *common
+    profiles: ["gui"]
+    image: geospatial-nav:humble-desktop
+    container_name: geospatial_desktop
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.desktop
+    gpus: all
+    devices:
+      - /dev/dri:/dev/dri
+    environment:
+      <<: *env
+      # El portátil es híbrido (iGPU AMD + RTX): descomenta para que RViz use la NVIDIA
+      # __NV_PRIME_RENDER_OFFLOAD: "1"
+      # __GLX_VENDOR_LIBRARY_NAME: nvidia
+    # Sin privileged. Si conectas el ublox/Livox por USB al portátil, añade:
+    # devices: ["/dev/ttyACM0:/dev/ttyACM0"]
