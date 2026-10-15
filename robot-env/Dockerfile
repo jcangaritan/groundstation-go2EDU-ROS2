@@ -171,18 +171,18 @@ RUN echo "force_color_prompt=yes" >> /root/.bashrc && \
 RUN echo "source /opt/ros/humble/setup.bash" >> /root/.bashrc && \
     echo "if [ -f /root/drivers_ws/install/setup.bash ]; then source /root/drivers_ws/install/setup.bash; fi" >> /root/.bashrc && \
     echo "if [ -f /root/fast_lio_ws/install/setup.bash ]; then source /root/fast_lio_ws/install/setup.bash; fi" >> /root/.bashrc && \
-    echo "if [ -f /root/geospatial_ws/install/setup.bash ]; then source /root/geospatial_ws/install/setup.bash; fi" >> /root/.bashrc && \
+    echo "if [ -f /root/robinlab_ws/install/setup.bash ]; then source /root/robinlab_ws/install/setup.bash; fi" >> /root/.bashrc && \
     echo "echo 'ROS2 Humble [ROBOT] & workspaces are ready.'" >> /root/.bashrc
 
 # ⚙ [SETUP] MORE USED PATHS
-RUN echo "alias ggeo='cd /root/geospatial_ws'" >> /root/.bashrc && \
-    echo "alias gdata='cd /root/geospatial_ws/data'" >> /root/.bashrc && \
-    echo "alias gsrc='cd /root/geospatial_ws/src/geospatial-nav/src'" >> /root/.bashrc
+RUN echo "alias robws='cd /root/robinlab_ws'" >> /root/.bashrc && \
+    echo "alias rdata='cd /root/robinlab_ws/data'" >> /root/.bashrc && \
+    echo "alias rsrc='cd /root/robinlab_ws/src/robinlab-nav/src'" >> /root/.bashrc
 
-#RUN echo "export CYCLONEDDS_URI=file:///root/geospatial_ws/src/geospatial-nav/cyclonedds.xml" >> /root/.bashrc
+#RUN echo "export CYCLONEDDS_URI=file:///root/robinlab_ws/src/robinlab-nav/cyclonedds.xml" >> /root/.bashrc
 
 # ▶ [SETUP] INPUT
-WORKDIR /root/geospatial_ws
+WORKDIR /root/robinlab_ws
 COPY docker/entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
