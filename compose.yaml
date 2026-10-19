@@ -68,9 +68,9 @@ services:
     runtime: nvidia
     environment:
       <<: *env
-    # Deja memoria y núcleos al JetPack/servicios del Go2 (16 GB, 8 cores)
+        # Saving memory -> Jetson orin NX is setted on energy mode 15W  this means: only 4 cores available
     mem_limit: 11g
-    cpus: 6
+    # ⚠ cpus: 6
 
   # ==========================================================
   # Ground station: ASUS TUF A15 (x86_64, RTX 4060)
