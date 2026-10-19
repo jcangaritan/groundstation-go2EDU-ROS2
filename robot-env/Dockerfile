@@ -183,7 +183,7 @@ RUN echo "alias robws='cd /root/robinlab_ws'" >> /root/.bashrc && \
 
 # ▶ [SETUP] INPUT
 WORKDIR /root/robinlab_ws
-COPY docker/entrypoint.sh /entrypoint.sh
+COPY robot_env/entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
 ENV RCUTILS_COLORIZED_OUTPUT=1
