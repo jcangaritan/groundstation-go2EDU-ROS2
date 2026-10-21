@@ -1,0 +1,217 @@
+[0.000000] (-) TimerEvent: {}
+[0.000179] (laika_media) JobQueued: {'identifier': 'laika_media', 'dependencies': OrderedDict()}
+[0.000254] (laika_media) JobStarted: {'identifier': 'laika_media'}
+[0.017929] (laika_media) JobProgress: {'identifier': 'laika_media', 'progress': 'cmake'}
+[0.018430] (laika_media) Command: {'cmd': ['/usr/bin/cmake', '/root/robinlab_ws/src/laika_media', '-DCMAKE_INSTALL_PREFIX=/root/robinlab_ws/install/laika_media'], 'cwd': '/root/robinlab_ws/build/laika_media', 'env': OrderedDict([('HOSTNAME', 'a15'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/root/drivers_ws/install/unitree_hg/lib:/root/drivers_ws/install/unitree_go/lib:/root/drivers_ws/install/unitree_api/lib:/root/drivers_ws/install/ublox_gps/lib:/root/drivers_ws/install/ublox_msgs/lib:/root/drivers_ws/install/livox_ros_driver2/lib:/root/fast_lio_ws/install/fast_lio/lib:/root/unitree_ws/install/unitree_hg/lib:/root/unitree_ws/install/unitree_go/lib:/root/unitree_ws/install/unitree_api/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:'), ('HOME', '/root'), ('OLDPWD', '/root/robinlab_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('PS1', '\\[\x1b[01;32m\\]\\u@\\h\\[\x1b[00m\\]:\\[\x1b[01;34m\\]\\w\\[\x1b[00m\\]$'), ('COLCON_PREFIX_PATH', '/root/fast_lio_ws/install:/root/drivers_ws/install:/root/unitree_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/root/drivers_ws/install/unitree_ros2_example/bin:/root/unitree_ws/install/unitree_ros2_example/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/drivers_ws/install/unitree_ros2_example:/root/drivers_ws/install/unitree_hg:/root/drivers_ws/install/unitree_go:/root/drivers_ws/install/unitree_api:/root/drivers_ws/install/ublox:/root/drivers_ws/install/ublox_gps:/root/drivers_ws/install/ublox_msgs:/root/drivers_ws/install/ublox_serialization:/root/drivers_ws/install/livox_ros_driver2:/root/fast_lio_ws/install/fast_lio:/root/unitree_ws/install/unitree_ros2_example:/root/unitree_ws/install/unitree_hg:/root/unitree_ws/install/unitree_go:/root/unitree_ws/install/unitree_api:/opt/ros/humble'), ('PWD', '/root/robinlab_ws/build/laika_media'), ('LC_ALL', 'C.UTF-8'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('PYTHONPATH', '/root/drivers_ws/install/unitree_hg/local/lib/python3.10/dist-packages:/root/drivers_ws/install/unitree_go/local/lib/python3.10/dist-packages:/root/drivers_ws/install/unitree_api/local/lib/python3.10/dist-packages:/root/drivers_ws/install/ublox_msgs/local/lib/python3.10/dist-packages:/root/drivers_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/root/fast_lio_ws/install/fast_lio/local/lib/python3.10/dist-packages:/root/unitree_ws/install/unitree_hg/local/lib/python3.10/dist-packages:/root/unitree_ws/install/unitree_go/local/lib/python3.10/dist-packages:/root/unitree_ws/install/unitree_api/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/drivers_ws/install/unitree_ros2_example:/root/drivers_ws/install/unitree_hg:/root/drivers_ws/install/unitree_go:/root/drivers_ws/install/unitree_api:/root/drivers_ws/install/ublox:/root/drivers_ws/install/ublox_gps:/root/drivers_ws/install/ublox_msgs:/root/drivers_ws/install/ublox_serialization:/root/drivers_ws/install/livox_ros_driver2:/root/fast_lio_ws/install/fast_lio:/root/unitree_ws/install/unitree_ros2_example:/root/unitree_ws/install/unitree_hg:/root/unitree_ws/install/unitree_go:/root/unitree_ws/install/unitree_api:/opt/ros/humble')]), 'shell': False}
+[0.099103] (-) TimerEvent: {}
+[0.165095] (laika_media) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.199216] (-) TimerEvent: {}
+[0.254597] (laika_media) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.265755] (laika_media) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.299316] (-) TimerEvent: {}
+[0.345580] (laika_media) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.350381] (laika_media) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.350771] (laika_media) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.351444] (laika_media) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.354592] (laika_media) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.399437] (-) TimerEvent: {}
+[0.435114] (laika_media) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.440550] (laika_media) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.440881] (laika_media) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.441386] (laika_media) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.449708] (laika_media) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.499543] (-) TimerEvent: {}
+[0.596345] (laika_media) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.599628] (-) TimerEvent: {}
+[0.699853] (-) TimerEvent: {}
+[0.732858] (laika_media) StdoutLine: {'line': b'-- Found OpenCV: /usr (found version "4.5.4") \n'}
+[0.737108] (laika_media) StdoutLine: {'line': b'-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)\n'}
+[0.799951] (-) TimerEvent: {}
+[0.804549] (laika_media) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.815015] (laika_media) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.829336] (laika_media) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.853469] (laika_media) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.877529] (laika_media) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.900039] (-) TimerEvent: {}
+[0.948376] (laika_media) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 1.3.5 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)\n'}
+[1.000157] (-) TimerEvent: {}
+[1.004052] (laika_media) StdoutLine: {'line': b'-- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.069335] (laika_media) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.3 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.072405] (laika_media) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[1.089951] (laika_media) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.100244] (-) TimerEvent: {}
+[1.172891] (laika_media) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.173294] (laika_media) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.200362] (-) TimerEvent: {}
+[1.249837] (laika_media) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.250673] (laika_media) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.300486] (-) TimerEvent: {}
+[1.301890] (laika_media) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.2 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[1.323009] (laika_media) StdoutLine: {'line': b'-- Found tf2: 0.25.22 (/opt/ros/humble/share/tf2/cmake)\n'}
+[1.340964] (laika_media) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.22 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[1.400585] (-) TimerEvent: {}
+[1.449136] (laika_media) StdoutLine: {'line': b'-- Found tf2_eigen: 0.25.22 (/opt/ros/humble/share/tf2_eigen/cmake)\n'}
+[1.454891] (laika_media) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.24 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[1.471433] (laika_media) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[1.472530] (laika_media) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[1.472648] (laika_media) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[1.477839] (laika_media) StdoutLine: {'line': b'-- Found pcl_ros: 2.4.5 (/opt/ros/humble/share/pcl_ros/cmake)\n'}
+[1.500959] (-) TimerEvent: {}
+[1.527449] (laika_media) StdoutLine: {'line': b"-- Checking for module 'eigen3'\n"}
+[1.547193] (laika_media) StdoutLine: {'line': b'--   Found eigen3, version 3.4.0\n'}
+[1.592642] (laika_media) StdoutLine: {'line': b'-- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") \n'}
+[1.592812] (laika_media) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[1.601050] (-) TimerEvent: {}
+[1.656175] (laika_media) StdoutLine: {'line': b"-- Checking for module 'flann'\n"}
+[1.674484] (laika_media) StdoutLine: {'line': b'--   Found flann, version 1.9.1\n'}
+[1.701160] (-) TimerEvent: {}
+[1.727244] (laika_media) StdoutLine: {'line': b'-- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  \n'}
+[1.727420] (laika_media) StdoutLine: {'line': b'-- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)\n'}
+[1.801281] (-) TimerEvent: {}
+[1.901563] (-) TimerEvent: {}
+[2.001862] (-) TimerEvent: {}
+[2.102143] (-) TimerEvent: {}
+[2.202411] (-) TimerEvent: {}
+[2.302668] (-) TimerEvent: {}
+[2.402930] (-) TimerEvent: {}
+[2.503209] (-) TimerEvent: {}
+[2.603490] (-) TimerEvent: {}
+[2.703785] (-) TimerEvent: {}
+[2.766193] (laika_media) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[2.784064] (laika_media) StdoutLine: {'line': b'--   Found libusb-1.0, version 1.0.25\n'}
+[2.803872] (-) TimerEvent: {}
+[2.832068] (laika_media) StdoutLine: {'line': b'-- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  \n'}
+[2.833480] (laika_media) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[2.903866] (laika_media) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[2.904035] (-) TimerEvent: {}
+[3.004250] (-) TimerEvent: {}
+[3.027997] (laika_media) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[3.034758] (laika_media) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[3.041583] (laika_media) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[3.104364] (-) TimerEvent: {}
+[3.166079] (laika_media) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[3.204481] (-) TimerEvent: {}
+[3.286258] (laika_media) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[3.304577] (-) TimerEvent: {}
+[3.402783] (laika_media) StdoutLine: {'line': b'-- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  \n'}
+[3.403329] (laika_media) StdoutLine: {'line': b'-- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  \n'}
+[3.403881] (laika_media) StdoutLine: {'line': b'-- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  \n'}
+[3.404396] (laika_media) StdoutLine: {'line': b'-- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  \n'}
+[3.404639] (-) TimerEvent: {}
+[3.405018] (laika_media) StdoutLine: {'line': b'-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  \n'}
+[3.405588] (laika_media) StdoutLine: {'line': b'-- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  \n'}
+[3.405866] (laika_media) StdoutLine: {'line': b'-- Found PCL_2D: /usr/include/pcl-1.12  \n'}
+[3.406155] (laika_media) StdoutLine: {'line': b'-- Found PCL_GEOMETRY: /usr/include/pcl-1.12  \n'}
+[3.406684] (laika_media) StdoutLine: {'line': b'-- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  \n'}
+[3.407276] (laika_media) StdoutLine: {'line': b'-- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  \n'}
+[3.407811] (laika_media) StdoutLine: {'line': b'-- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  \n'}
+[3.408342] (laika_media) StdoutLine: {'line': b'-- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  \n'}
+[3.408980] (laika_media) StdoutLine: {'line': b'-- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  \n'}
+[3.409578] (laika_media) StdoutLine: {'line': b'-- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  \n'}
+[3.410137] (laika_media) StdoutLine: {'line': b'-- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  \n'}
+[3.410749] (laika_media) StdoutLine: {'line': b'-- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  \n'}
+[3.411401] (laika_media) StdoutLine: {'line': b'-- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  \n'}
+[3.411962] (laika_media) StdoutLine: {'line': b'-- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  \n'}
+[3.412590] (laika_media) StdoutLine: {'line': b'-- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  \n'}
+[3.413129] (laika_media) StdoutLine: {'line': b'-- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  \n'}
+[3.413674] (laika_media) StdoutLine: {'line': b'-- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  \n'}
+[3.413913] (laika_media) StdoutLine: {'line': b'-- Found PCL_MODELER: /usr/include/pcl-1.12  \n'}
+[3.418178] (laika_media) StdoutLine: {'line': b'-- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  \n'}
+[3.419003] (laika_media) StdoutLine: {'line': b'-- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  \n'}
+[3.419800] (laika_media) StdoutLine: {'line': b'-- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  \n'}
+[3.429353] (laika_media) StdoutLine: {'line': b'-- Found livox_ros_driver2: 1.0.0 (/root/drivers_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake)\n'}
+[3.448763] (laika_media) StdoutLine: {'line': b'-- Found unitree_api: 0.0.0 (/root/drivers_ws/install/unitree_api/share/unitree_api/cmake)\n'}
+[3.461679] (laika_media) StdoutLine: {'line': b'-- Found unitree_go: 0.0.0 (/root/drivers_ws/install/unitree_go/share/unitree_go/cmake)\n'}
+[3.477500] (laika_media) StdoutLine: {'line': b'-- Found std_srvs: 4.9.2 (/opt/ros/humble/share/std_srvs/cmake)\n'}
+[3.492576] (laika_media) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[3.504748] (-) TimerEvent: {}
+[3.582730] (laika_media) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[3.583005] (laika_media) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[3.583107] (laika_media) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[3.584039] (laika_media) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[3.585784] (laika_media) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[3.585889] (laika_media) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[3.586577] (laika_media) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[3.588974] (laika_media) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.604872] (-) TimerEvent: {}
+[3.609845] (laika_media) StdoutLine: {'line': b'-- Generating done\n'}
+[3.614636] (laika_media) StdoutLine: {'line': b'-- Build files have been written to: /root/robinlab_ws/build/laika_media\n'}
+[3.629808] (laika_media) CommandEnded: {'returncode': 0}
+[3.630556] (laika_media) JobProgress: {'identifier': 'laika_media', 'progress': 'build'}
+[3.631775] (laika_media) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/robinlab_ws/build/laika_media', '--', '-j16', '-l16'], 'cwd': '/root/robinlab_ws/build/laika_media', 'env': OrderedDict([('HOSTNAME', 'a15'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/root/drivers_ws/install/unitree_hg/lib:/root/drivers_ws/install/unitree_go/lib:/root/drivers_ws/install/unitree_api/lib:/root/drivers_ws/install/ublox_gps/lib:/root/drivers_ws/install/ublox_msgs/lib:/root/drivers_ws/install/livox_ros_driver2/lib:/root/fast_lio_ws/install/fast_lio/lib:/root/unitree_ws/install/unitree_hg/lib:/root/unitree_ws/install/unitree_go/lib:/root/unitree_ws/install/unitree_api/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:'), ('HOME', '/root'), ('OLDPWD', '/root/robinlab_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('PS1', '\\[\x1b[01;32m\\]\\u@\\h\\[\x1b[00m\\]:\\[\x1b[01;34m\\]\\w\\[\x1b[00m\\]$'), ('COLCON_PREFIX_PATH', '/root/fast_lio_ws/install:/root/drivers_ws/install:/root/unitree_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/root/drivers_ws/install/unitree_ros2_example/bin:/root/unitree_ws/install/unitree_ros2_example/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/drivers_ws/install/unitree_ros2_example:/root/drivers_ws/install/unitree_hg:/root/drivers_ws/install/unitree_go:/root/drivers_ws/install/unitree_api:/root/drivers_ws/install/ublox:/root/drivers_ws/install/ublox_gps:/root/drivers_ws/install/ublox_msgs:/root/drivers_ws/install/ublox_serialization:/root/drivers_ws/install/livox_ros_driver2:/root/fast_lio_ws/install/fast_lio:/root/unitree_ws/install/unitree_ros2_example:/root/unitree_ws/install/unitree_hg:/root/unitree_ws/install/unitree_go:/root/unitree_ws/install/unitree_api:/opt/ros/humble'), ('PWD', '/root/robinlab_ws/build/laika_media'), ('LC_ALL', 'C.UTF-8'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('PYTHONPATH', '/root/drivers_ws/install/unitree_hg/local/lib/python3.10/dist-packages:/root/drivers_ws/install/unitree_go/local/lib/python3.10/dist-packages:/root/drivers_ws/install/unitree_api/local/lib/python3.10/dist-packages:/root/drivers_ws/install/ublox_msgs/local/lib/python3.10/dist-packages:/root/drivers_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/root/fast_lio_ws/install/fast_lio/local/lib/python3.10/dist-packages:/root/unitree_ws/install/unitree_hg/local/lib/python3.10/dist-packages:/root/unitree_ws/install/unitree_go/local/lib/python3.10/dist-packages:/root/unitree_ws/install/unitree_api/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/drivers_ws/install/unitree_ros2_example:/root/drivers_ws/install/unitree_hg:/root/drivers_ws/install/unitree_go:/root/drivers_ws/install/unitree_api:/root/drivers_ws/install/ublox:/root/drivers_ws/install/ublox_gps:/root/drivers_ws/install/ublox_msgs:/root/drivers_ws/install/ublox_serialization:/root/drivers_ws/install/livox_ros_driver2:/root/fast_lio_ws/install/fast_lio:/root/unitree_ws/install/unitree_ros2_example:/root/unitree_ws/install/unitree_hg:/root/unitree_ws/install/unitree_go:/root/unitree_ws/install/unitree_api:/opt/ros/humble')]), 'shell': False}
+[3.695197] (laika_media) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/go2_cam.dir/src/vision/go2_cam.cpp.o\x1b[0m\n'}
+[3.704987] (-) TimerEvent: {}
+[3.805265] (-) TimerEvent: {}
+[3.905544] (-) TimerEvent: {}
+[4.005836] (-) TimerEvent: {}
+[4.106115] (-) TimerEvent: {}
+[4.206394] (-) TimerEvent: {}
+[4.306678] (-) TimerEvent: {}
+[4.407446] (-) TimerEvent: {}
+[4.507732] (-) TimerEvent: {}
+[4.608016] (-) TimerEvent: {}
+[4.708305] (-) TimerEvent: {}
+[4.808595] (-) TimerEvent: {}
+[4.908894] (-) TimerEvent: {}
+[5.009181] (-) TimerEvent: {}
+[5.109476] (-) TimerEvent: {}
+[5.209774] (-) TimerEvent: {}
+[5.310062] (-) TimerEvent: {}
+[5.410354] (-) TimerEvent: {}
+[5.510659] (-) TimerEvent: {}
+[5.610946] (-) TimerEvent: {}
+[5.711235] (-) TimerEvent: {}
+[5.811520] (-) TimerEvent: {}
+[5.911815] (-) TimerEvent: {}
+[6.012099] (-) TimerEvent: {}
+[6.112751] (-) TimerEvent: {}
+[6.213052] (-) TimerEvent: {}
+[6.313338] (-) TimerEvent: {}
+[6.413674] (-) TimerEvent: {}
+[6.513969] (-) TimerEvent: {}
+[6.614254] (-) TimerEvent: {}
+[6.714539] (-) TimerEvent: {}
+[6.814833] (-) TimerEvent: {}
+[6.915105] (-) TimerEvent: {}
+[7.015388] (-) TimerEvent: {}
+[7.115679] (-) TimerEvent: {}
+[7.215981] (-) TimerEvent: {}
+[7.316272] (-) TimerEvent: {}
+[7.416577] (-) TimerEvent: {}
+[7.516863] (-) TimerEvent: {}
+[7.617139] (-) TimerEvent: {}
+[7.717417] (-) TimerEvent: {}
+[7.817694] (-) TimerEvent: {}
+[7.917972] (-) TimerEvent: {}
+[8.018248] (-) TimerEvent: {}
+[8.071097] (laika_media) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable go2_cam\x1b[0m\n'}
+[8.118367] (-) TimerEvent: {}
+[8.218669] (-) TimerEvent: {}
+[8.318958] (-) TimerEvent: {}
+[8.419241] (-) TimerEvent: {}
+[8.519537] (-) TimerEvent: {}
+[8.535379] (laika_media) StdoutLine: {'line': b'[100%] Built target go2_cam\n'}
+[8.547160] (laika_media) CommandEnded: {'returncode': 0}
+[8.547630] (laika_media) JobProgress: {'identifier': 'laika_media', 'progress': 'install'}
+[8.557691] (laika_media) Command: {'cmd': ['/usr/bin/cmake', '--install', '/root/robinlab_ws/build/laika_media'], 'cwd': '/root/robinlab_ws/build/laika_media', 'env': OrderedDict([('HOSTNAME', 'a15'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/root/drivers_ws/install/unitree_hg/lib:/root/drivers_ws/install/unitree_go/lib:/root/drivers_ws/install/unitree_api/lib:/root/drivers_ws/install/ublox_gps/lib:/root/drivers_ws/install/ublox_msgs/lib:/root/drivers_ws/install/livox_ros_driver2/lib:/root/fast_lio_ws/install/fast_lio/lib:/root/unitree_ws/install/unitree_hg/lib:/root/unitree_ws/install/unitree_go/lib:/root/unitree_ws/install/unitree_api/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:'), ('HOME', '/root'), ('OLDPWD', '/root/robinlab_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('PS1', '\\[\x1b[01;32m\\]\\u@\\h\\[\x1b[00m\\]:\\[\x1b[01;34m\\]\\w\\[\x1b[00m\\]$'), ('COLCON_PREFIX_PATH', '/root/fast_lio_ws/install:/root/drivers_ws/install:/root/unitree_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/root/drivers_ws/install/unitree_ros2_example/bin:/root/unitree_ws/install/unitree_ros2_example/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/drivers_ws/install/unitree_ros2_example:/root/drivers_ws/install/unitree_hg:/root/drivers_ws/install/unitree_go:/root/drivers_ws/install/unitree_api:/root/drivers_ws/install/ublox:/root/drivers_ws/install/ublox_gps:/root/drivers_ws/install/ublox_msgs:/root/drivers_ws/install/ublox_serialization:/root/drivers_ws/install/livox_ros_driver2:/root/fast_lio_ws/install/fast_lio:/root/unitree_ws/install/unitree_ros2_example:/root/unitree_ws/install/unitree_hg:/root/unitree_ws/install/unitree_go:/root/unitree_ws/install/unitree_api:/opt/ros/humble'), ('PWD', '/root/robinlab_ws/build/laika_media'), ('LC_ALL', 'C.UTF-8'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('PYTHONPATH', '/root/drivers_ws/install/unitree_hg/local/lib/python3.10/dist-packages:/root/drivers_ws/install/unitree_go/local/lib/python3.10/dist-packages:/root/drivers_ws/install/unitree_api/local/lib/python3.10/dist-packages:/root/drivers_ws/install/ublox_msgs/local/lib/python3.10/dist-packages:/root/drivers_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/root/fast_lio_ws/install/fast_lio/local/lib/python3.10/dist-packages:/root/unitree_ws/install/unitree_hg/local/lib/python3.10/dist-packages:/root/unitree_ws/install/unitree_go/local/lib/python3.10/dist-packages:/root/unitree_ws/install/unitree_api/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/drivers_ws/install/unitree_ros2_example:/root/drivers_ws/install/unitree_hg:/root/drivers_ws/install/unitree_go:/root/drivers_ws/install/unitree_api:/root/drivers_ws/install/ublox:/root/drivers_ws/install/ublox_gps:/root/drivers_ws/install/ublox_msgs:/root/drivers_ws/install/ublox_serialization:/root/drivers_ws/install/livox_ros_driver2:/root/fast_lio_ws/install/fast_lio:/root/unitree_ws/install/unitree_ros2_example:/root/unitree_ws/install/unitree_hg:/root/unitree_ws/install/unitree_go:/root/unitree_ws/install/unitree_api:/opt/ros/humble')]), 'shell': False}
+[8.566376] (laika_media) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[8.566534] (laika_media) StdoutLine: {'line': b'-- Installing: /root/robinlab_ws/install/laika_media/lib/laika_media/go2_cam\n'}
+[8.567740] (laika_media) StdoutLine: {'line': b'-- Set runtime path of "/root/robinlab_ws/install/laika_media/lib/laika_media/go2_cam" to ""\n'}
+[8.567885] (laika_media) StdoutLine: {'line': b'-- Installing: /root/robinlab_ws/install/laika_media/share/ament_index/resource_index/package_run_dependencies/laika_media\n'}
+[8.568089] (laika_media) StdoutLine: {'line': b'-- Installing: /root/robinlab_ws/install/laika_media/share/ament_index/resource_index/parent_prefix_path/laika_media\n'}
+[8.568309] (laika_media) StdoutLine: {'line': b'-- Installing: /root/robinlab_ws/install/laika_media/share/laika_media/environment/ament_prefix_path.sh\n'}
+[8.568465] (laika_media) StdoutLine: {'line': b'-- Installing: /root/robinlab_ws/install/laika_media/share/laika_media/environment/ament_prefix_path.dsv\n'}
+[8.568598] (laika_media) StdoutLine: {'line': b'-- Installing: /root/robinlab_ws/install/laika_media/share/laika_media/environment/path.sh\n'}
+[8.568766] (laika_media) StdoutLine: {'line': b'-- Installing: /root/robinlab_ws/install/laika_media/share/laika_media/environment/path.dsv\n'}
+[8.568908] (laika_media) StdoutLine: {'line': b'-- Installing: /root/robinlab_ws/install/laika_media/share/laika_media/local_setup.bash\n'}
+[8.569050] (laika_media) StdoutLine: {'line': b'-- Installing: /root/robinlab_ws/install/laika_media/share/laika_media/local_setup.sh\n'}
+[8.569198] (laika_media) StdoutLine: {'line': b'-- Installing: /root/robinlab_ws/install/laika_media/share/laika_media/local_setup.zsh\n'}
+[8.569340] (laika_media) StdoutLine: {'line': b'-- Installing: /root/robinlab_ws/install/laika_media/share/laika_media/local_setup.dsv\n'}
+[8.569490] (laika_media) StdoutLine: {'line': b'-- Installing: /root/robinlab_ws/install/laika_media/share/laika_media/package.dsv\n'}
+[8.569677] (laika_media) StdoutLine: {'line': b'-- Installing: /root/robinlab_ws/install/laika_media/share/ament_index/resource_index/packages/laika_media\n'}
+[8.569862] (laika_media) StdoutLine: {'line': b'-- Installing: /root/robinlab_ws/install/laika_media/share/laika_media/cmake/laika_mediaConfig.cmake\n'}
+[8.569994] (laika_media) StdoutLine: {'line': b'-- Installing: /root/robinlab_ws/install/laika_media/share/laika_media/cmake/laika_mediaConfig-version.cmake\n'}
+[8.570138] (laika_media) StdoutLine: {'line': b'-- Installing: /root/robinlab_ws/install/laika_media/share/laika_media/package.xml\n'}
+[8.571651] (laika_media) CommandEnded: {'returncode': 0}
+[8.600149] (laika_media) JobEnded: {'identifier': 'laika_media', 'rc': 0}
+[8.600659] (-) EventReactorShutdown: {}
