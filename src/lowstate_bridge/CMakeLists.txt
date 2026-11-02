@@ -13,4 +13,6 @@ ament_target_dependencies(joint_bridge rclcpp sensor_msgs unitree_go)
 install(TARGETS joint_bridge
 	DESTINATION lib/${PROJECT_NAME})
 
+install(DIRECTORY launch
+	DESTINATION share/${PROJECT_NAME})
 ament_package()
