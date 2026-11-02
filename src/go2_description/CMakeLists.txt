@@ -1,15 +1,21 @@
 cmake_minimum_required(VERSION 3.8)
 project(go2_description)
 
-# find dependencies
+if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+  add_compile_options(-Wall -Wextra -Wpedantic)
+endif()
+
 find_package(ament_cmake REQUIRED)
-find_package(rclcpp REQUIRED)
-find_package(sensor_msgs REQUIRED)
-find_package(unitree_go REQUIRED)
 
-add_executable(joint_bridge src/joint_bridge.cpp)
-ament_target_dependencies(joint_bridge rclcpp sensor_msgs unitree_go)
+install(DIRECTORY launch urdf dae config
+  DESTINATION share/${PROJECT_NAME}
+)
 
-install(TARGETS joint_bridge
-	DESTINATION lib/${PROJECT_NAME})
+if(BUILD_TESTING)
+  find_package(ament_lint_auto REQUIRED)
+  set(ament_cmake_copyright_FOUND TRUE)
+  set(ament_cmake_cpplint_FOUND TRUE)
+  ament_lint_auto_find_test_dependencies()
+endif()
+
 ament_package()
