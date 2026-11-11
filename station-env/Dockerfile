@@ -133,6 +133,20 @@ RUN /bin/bash -c "source /opt/ros/humble/setup.bash && \
 	make install && \
 	rm -rf /tmp/cyclonedds-cxx"
 
+# ⚠ [DOWNLOAD SOPHUS]
+RUN apt-get update && apt-get install -y --no-install-recommends \
+	libfmt-dev \
+	&& git clone --depth 1 --branch 1.22.10 \
+	https://github.com/strasdat/Sophus.git /tmp/Sophus \
+	&& cmake -S /tmp/Sophus -B /tmp/Sophus/build \
+	-DBUILD_SOPHUS_TESTS=OFF \
+	-DBUILD_SOPHUS_EXAMPLES=OFF \
+	-DBUILD_SOPHUS_PYTHON_BINDINGS=OFF \
+	&& cmake --install /tmp/Sophus/build \
+	&& rm -rf /tmp/Sophus /var/lib/apt/lists/*
+
+
+
 # ▶ [SETUP] CONFIGURE LIBRARY PATH
 ENV LD_LIBRARY_PATH=/opt/ros/humble/lib:/usr/local/lib:${LD_LIBRARY_PATH:-}
 

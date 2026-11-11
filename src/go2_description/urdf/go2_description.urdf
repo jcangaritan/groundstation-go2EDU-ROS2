@@ -1214,4 +1214,37 @@ Stephen Brawner (brawner@gmail.com)
     <axis
       xyz="0 0 0" />
   </joint>
+  <!-- ⛛ Built-in Camera -->
+  <link name="front_camera"/>
+  <joint name="front_camera_joint" type="fixed">
+	  <parent link="Head_upper" />
+	  <child link="front_camera" />
+	  <origin xyz="0.045 0 0.03" rpy="-1.5708 0 -1.5708" />
+  </joint>
+
+  <!-- ⛛ Livox MID 360 -->
+  <link name="livox_frame">
+	  <visual>
+		  <origin xyz="0 0 -0.02725" rpy="0 0 0" />
+		  <geometry> <box size="0.065 0.065 0.0395" /></geometry>
+		  <material name="livox_grey"><color rgba="0.35 0.35 0.38 1"/></material>
+	  </visual>
+	  <visual>
+		  <origin xyz="0 0 0.00275" rpy="0 0 0" />
+		  <geometry><cylinder radius="0.0215" length="0.0205"/></geometry>
+		  <material name="livox_blue"><color rgba="0.1 0.3 0.8 0.9"/></material>
+	  </visual>
+  </link>
+  <joint name="livox_joint" type="fixed">
+	  <parent link="base_link"/>
+	  <child link="livox_frame"/>
+	  <origin xyz="0.16143 0 0.12262" rpy="0 0.2269 0" />
+  </joint>
+  <link name="livox_imu" />
+  <joint name="livox_imu_joint" type="fixed">
+	  <parent link="livox_frame"/>
+	  <child link="livox_imu"/>
+	  <origin xyz="0.011 0.02329 -0.04412" rpy="0 0 0"/>
+  </joint>
+
 </robot>
