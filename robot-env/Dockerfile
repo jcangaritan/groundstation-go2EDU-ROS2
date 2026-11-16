@@ -41,6 +41,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	python3-pip \
 	python3-colcon-common-extensions \
 	libeigen3-dev \
+	nlohmann-json3-dev \
 	libyaml-cpp-dev \
 	libasio-dev \
 	libboost-all-dev \
