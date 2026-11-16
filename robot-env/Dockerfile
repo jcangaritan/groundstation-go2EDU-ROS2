@@ -74,6 +74,29 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	ros-humble-image-transport \
 	&& rm -rf /var/lib/apt/lists/*
 
+# ⛛ [INSTALL] REALSENSE DEPENDENCIES
+RUN apt-get update && apt-get install -y --no-install-recommends \
+	libssl-dev \
+	libusb-1.0-0-dev \
+	libudev-dev \
+	pkg-config \
+	ros-humble-diagnostic-updater \
+	&& rm -rf /var/lib/apt/lists/*
+
+# ⚠ [DOWNLOAD & INSTALL] LIBREALSENSE (RSUSB, sin CUDA, sin parches de kernel)
+# -j4 y no $(nproc): en la Jetson compilar con todos los núcleos puede quedarse sin RAM.
+RUN git clone --depth 1 --branch v2.55.1 \
+		https://github.com/IntelRealSense/librealsense.git /tmp/librealsense && \
+	cmake -S /tmp/librealsense -B /tmp/librealsense/build \
+		-DCMAKE_BUILD_TYPE=Release \
+		-DFORCE_RSUSB_BACKEND=ON \
+		-DBUILD_WITH_CUDA=OFF \
+		-DBUILD_EXAMPLES=OFF \
+		-DBUILD_GRAPHICAL_EXAMPLES=OFF && \
+	cmake --build /tmp/librealsense/build -j4 && \
+	cmake --install /tmp/librealsense/build && \
+	rm -rf /tmp/librealsense
+
 # ⛛ [INSTALL] ROS2 LOCALIZATION & GEO MESSAGES (sin Nav2: la odometría la da FAST-LIO2)
 RUN apt-get update && apt-get install -y --no-install-recommends \
 	ros-humble-robot-localization \

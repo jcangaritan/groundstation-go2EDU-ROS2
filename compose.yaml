@@ -43,6 +43,8 @@ x-volumes: &ws-volumes
   - ./install_docker:/root/robinlab_ws/install
   - ${HOME}/docker_data:/root/robinlab_ws/data
   - ${HOME}/robinlab_config:/root/env_config
+  # realsense
+  - /dev/bus/usb:/dev/bus/usb
 
 x-common: &common
   network_mode: host
