@@ -35,4 +35,6 @@ ament_target_dependencies(cmd_vel_bridge rclcpp geometry_msgs unitree_api)
 install(TARGETS cruise_teleop cmd_vel_bridge
   DESTINATION lib/${PROJECT_NAME})
 
+install(DIRECTORY launch DESTINATION share/${PROJECT_NAME})
+
 ament_package()
