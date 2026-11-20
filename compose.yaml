@@ -27,6 +27,7 @@ x-volumes: &ws-volumes
   # drivers_ws
   - ${HOME}/workspaces/drivers_ws/src/livox_ros_driver2:/root/drivers_ws/src/livox_ros_driver2
   - ${HOME}/workspaces/drivers_ws/src/ublox_ros2_ardusimple:/root/drivers_ws/src/ublox_ros2_ardusimple
+  - ${HOME}/workspaces/drivers_ws/src/ntrip_client:/root/drivers_ws/src/ntrip_client
   - ${HOME}/workspaces/drivers_ws/src/realsense-ros:/root/drivers_ws/src/realsense-ros
   - ${HOME}/workspaces/drivers_ws/build_drivers:/root/drivers_ws/build
   - ${HOME}/workspaces/drivers_ws/install_drivers:/root/drivers_ws/install
